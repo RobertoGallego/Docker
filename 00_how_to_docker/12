@@ -1,0 +1,7 @@
+docker run -d=true --restart=on-failure \
+-e MYSQL_ROOT_PASSWORD=Kerrigan \
+-e MYSQL_DATABASE=zerglings \
+--name spawning-pool \
+-v hatchery:/var/lib/mysql mysql
+
+#docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
